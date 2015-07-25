@@ -1,38 +1,63 @@
 package com.biajizui.biajizui;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.view.View;
+import android.view.Window;
 
+import com.biajizui.fragment.FragmentIndicator;
+import com.biajizui.fragment.FragmentIndicator.OnIndicateListener;
 
-public class MainActivity extends ActionBarActivity {
+/**
+ * @author yangyu
+ *	������������Activity�࣬�̳���FragmentActivity
+ */
+public class MainActivity extends FragmentActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
+	public static Fragment[] mFragments;
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.activity_main);
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+		setFragmentIndicator(0);
+		
+	}
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+	/**
+	 * ��ʼ��fragment
+	 */
+	private void setFragmentIndicator(int whichIsDefault) {
+		mFragments = new Fragment[3];
+		mFragments[0] = getSupportFragmentManager().findFragmentById(R.id.fragment_home);
+		mFragments[1] = getSupportFragmentManager().findFragmentById(R.id.fragment_search);
+		mFragments[2] = getSupportFragmentManager().findFragmentById(R.id.fragment_settings);
+		getSupportFragmentManager().beginTransaction().hide(mFragments[0])
+				.hide(mFragments[1]).hide(mFragments[2]).show(mFragments[whichIsDefault]).commit();
 
-        return super.onOptionsItemSelected(item);
-    }
+		FragmentIndicator mIndicator = (FragmentIndicator) findViewById(R.id.indicator);
+		FragmentIndicator.setIndicator(whichIsDefault);
+		mIndicator.setOnIndicateListener(new OnIndicateListener() {
+			@Override
+			public void onIndicate(View v, int which) {
+				getSupportFragmentManager().beginTransaction()
+						.hide(mFragments[0]).hide(mFragments[1])
+						.hide(mFragments[2]).show(mFragments[which]).commit();
+			}
+		});
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+	}
+	
+	@Override
+	protected void onPause() {
+		super.onPause();
+	}
+	
 }
