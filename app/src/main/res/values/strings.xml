@@ -1,16 +1,18 @@
 <resources>
-    <string name="app_name">biajizui</string>
+    <string name="app_name">bia唧嘴</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
-    <string name="tab_home">"首页"</string>
-    <string name="tab_search">"搜索"</string>
-    <string name="tab_settings">"设置"</string>
+    <string name="tab_home">"今日推荐"</string>
+    <string name="tab_history">"历史推荐"</string>
+    <string name="tab_show">"美食秀"</string>
+    <string name="tab_my">"我的"</string>
 
-    <string name="title_home">"首页"</string>
-    <string name="title_search">"搜索"</string>
-    <string name="title_settings">"设置"</string>
+    <string name="title_home">"今日推荐"</string>
+    <string name="title_history">"历史推荐"</string>
+    <string name="title_show">"美食秀"</string>
+    <string name="title_my">"我的"</string>
 
     <string name="back">"返回"</string>
     <string name="help">"帮助"</string>

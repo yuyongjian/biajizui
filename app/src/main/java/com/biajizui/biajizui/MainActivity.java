@@ -31,12 +31,13 @@ public class MainActivity extends FragmentActivity {
 	 * 设置fragment
 	 */
 	private void setFragmentIndicator(int whichIsDefault) {
-		mFragments = new Fragment[3];
+		mFragments = new Fragment[4];
 		mFragments[0] = getSupportFragmentManager().findFragmentById(R.id.fragment_home);
 		mFragments[1] = getSupportFragmentManager().findFragmentById(R.id.fragment_search);
 		mFragments[2] = getSupportFragmentManager().findFragmentById(R.id.fragment_settings);
+		mFragments[3] = getSupportFragmentManager().findFragmentById(R.id.fragment_settings);
 		getSupportFragmentManager().beginTransaction().hide(mFragments[0])
-				.hide(mFragments[1]).hide(mFragments[2]).show(mFragments[whichIsDefault]).commit();
+				.hide(mFragments[1]).hide(mFragments[2]).hide(mFragments[3]).show(mFragments[whichIsDefault]).commit();
 
 		FragmentIndicator mIndicator = (FragmentIndicator) findViewById(R.id.indicator);
 		FragmentIndicator.setIndicator(whichIsDefault);
@@ -45,7 +46,7 @@ public class MainActivity extends FragmentActivity {
 			public void onIndicate(View v, int which) {
 				getSupportFragmentManager().beginTransaction()
 						.hide(mFragments[0]).hide(mFragments[1])
-						.hide(mFragments[2]).show(mFragments[which]).commit();
+						.hide(mFragments[2]).hide(mFragments[3]).show(mFragments[which]).commit();
 			}
 		});
 	}

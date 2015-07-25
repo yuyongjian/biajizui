@@ -58,7 +58,7 @@ public class SettingsFragment extends Fragment {
 		mActivity = getActivity();
 
 		mTitle = (TitleView) mParent.findViewById(R.id.title);
-		mTitle.setTitle(R.string.title_settings);
+		mTitle.setTitle(R.string.title_show);
 		mTitle.setLeftButton(R.string.back, new OnLeftButtonClickListener() {
 
 			@Override

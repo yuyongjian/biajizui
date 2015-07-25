@@ -57,7 +57,7 @@ public class SearchFragment extends Fragment {
 		mActivity = getActivity();
 
 		mTitle = (TitleView) mParent.findViewById(R.id.title);
-		mTitle.setTitle(R.string.title_search);
+		mTitle.setTitle(R.string.title_history);
 		mTitle.setLeftButton(R.string.back, new OnLeftButtonClickListener() {
 
 			@Override

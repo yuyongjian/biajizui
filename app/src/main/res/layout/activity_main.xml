@@ -33,7 +33,7 @@
     <com.biajizui.fragment.FragmentIndicator
         android:id="@+id/indicator"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="54dip"
         android:background="@drawable/tab_footer_bg" />
 
 </LinearLayout>
