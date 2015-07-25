@@ -8,7 +8,9 @@ import android.view.Window;
 
 import com.biajizui.fragment.FragmentIndicator;
 import com.biajizui.fragment.FragmentIndicator.OnIndicateListener;
-
+import com.biajizui.imgsrcoll.ImgScroll;
+import android.widget.LinearLayout;
+import java.util.List;
 /**
  * @author yuyongjian
  * 主界面

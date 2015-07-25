@@ -9,11 +9,18 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/fragment_home_text"
+    <com.biajizui.imgsrcoll.ImgScroll
+        android:id="@+id/myvp"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/fragment_home_text"
-        android:textSize="18sp" />
+        android:layout_height="240dp" />
+
+    <LinearLayout
+        android:id="@+id/vb"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="3dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
 
 </LinearLayout>
