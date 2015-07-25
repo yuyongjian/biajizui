@@ -8,7 +8,7 @@ import android.view.animation.Interpolator;
 import android.widget.Scroller;
 /**
  * 图片滑动动画时间控制类  ,如果用默认时间可用不这个类
- * @author Administrator
+ * @author yuyongjian
  *
  *	FixedSpeedScroller scroller = new FixedSpeedScroller(context,new AccelerateInterpolator());
  */

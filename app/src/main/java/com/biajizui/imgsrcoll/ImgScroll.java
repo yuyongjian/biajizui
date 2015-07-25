@@ -18,7 +18,7 @@ import java.util.TimerTask;
 /**
  * 图片滚动类
  *
- * @author Administrator
+ * @author yuyongjian
  *
  */
 public class ImgScroll extends ViewPager {
