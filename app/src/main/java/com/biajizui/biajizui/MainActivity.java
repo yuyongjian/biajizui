@@ -10,8 +10,8 @@ import com.biajizui.fragment.FragmentIndicator;
 import com.biajizui.fragment.FragmentIndicator.OnIndicateListener;
 
 /**
- * @author yangyu
- *	������������Activity�࣬�̳���FragmentActivity
+ * @author yuyongjian
+ * 主界面
  */
 public class MainActivity extends FragmentActivity {
 
@@ -28,7 +28,7 @@ public class MainActivity extends FragmentActivity {
 	}
 
 	/**
-	 * ��ʼ��fragment
+	 * 设置fragment
 	 */
 	private void setFragmentIndicator(int whichIsDefault) {
 		mFragments = new Fragment[3];

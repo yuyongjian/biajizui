@@ -13,8 +13,8 @@ import android.widget.TextView;
 
 import com.biajizui.biajizui.R;
 /**
- * @author yangyu
- *	�����������Զ���ײ�������
+ * @author yuyongjian
+ * 导航栏指示器
  */
 public class FragmentIndicator extends LinearLayout implements OnClickListener {
 

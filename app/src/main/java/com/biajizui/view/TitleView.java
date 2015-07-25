@@ -11,8 +11,8 @@ import android.widget.TextView;
 import com.biajizui.biajizui.R;
 
 /**
- * @author yangyu
- *	�����������Զ��嶥��������
+ * @author yuyongjian
+ * 头部导航栏
  */
 public class TitleView extends FrameLayout implements View.OnClickListener {
 

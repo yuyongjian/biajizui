@@ -13,8 +13,8 @@ import com.biajizui.view.TitleView;
 import com.biajizui.view.TitleView.OnLeftButtonClickListener;
 
 /**
- * @author yangyu
- *	��������������fragmentҳ��
+ * @author yuyongjian
+ * 搜索页面
  */
 public class SearchFragment extends Fragment {
 
@@ -73,9 +73,9 @@ public class SearchFragment extends Fragment {
 //			}
 //		});
 	}
-	
+
 	/**
-	 * ���ص���ҳ
+	 * 返回首页
 	 */
 	private void backHomeFragment() {
 		getFragmentManager().beginTransaction()

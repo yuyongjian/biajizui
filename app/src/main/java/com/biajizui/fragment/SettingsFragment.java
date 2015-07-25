@@ -13,8 +13,8 @@ import com.biajizui.view.TitleView.OnLeftButtonClickListener;
 import com.biajizui.view.TitleView.OnRightButtonClickListener;
 
 /**
- * @author yangyu
- *	��������������fragmentҳ��
+ * @author yuyongjian
+ * 设置页面
  */
 public class SettingsFragment extends Fragment {
 	

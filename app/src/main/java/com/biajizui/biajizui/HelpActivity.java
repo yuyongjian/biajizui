@@ -5,8 +5,8 @@ import android.support.v4.app.FragmentActivity;
 import android.view.Window;
 
 /**
- * @author yangyu
- *	��������������Activity����
+ * @author yuyongjian
+ *	帮助界面
  */
 public class HelpActivity extends FragmentActivity {
 

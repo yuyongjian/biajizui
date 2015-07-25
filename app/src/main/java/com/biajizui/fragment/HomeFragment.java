@@ -15,8 +15,8 @@ import com.biajizui.view.TitleView.OnLeftButtonClickListener;
 import com.biajizui.view.TitleView.OnRightButtonClickListener;
 import com.biajizui.biajizui.HelpActivity;
 /**
- * @author yangyu
- *	������������ҳfragmentҳ��
+ * @author yuyongjian
+ * 首页
  */
 public class HomeFragment extends Fragment {
 
